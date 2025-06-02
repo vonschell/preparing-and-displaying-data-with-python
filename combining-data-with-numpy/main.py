@@ -16,6 +16,8 @@ with open("titanic2.csv", "r") as file:
   titanic_data2 = np.array(data_list)
 
 # ADD CODE: Merge two datasets
-
+combined_data = np.concatenate((titanic_data1, titanic_data2), axis=0)
 
 # ADD CODE: Print out shape and number of dimensions of merged dataset
+print(combined_data.shape)
+print(combined_data.ndim)
