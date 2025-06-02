@@ -6,7 +6,7 @@ slice_labels = ["Chocolate", "Cheese", "Pickles"]
 
 colors = ["D2691E", "#ff7f50", "#8A2BE2"]
 
-plt.pie(snack_scores, labels=slice_labels)
+plt.pie(snack_scores, labels=slice_labels, colors=colors)
 
 plt.title("Snack Scores", fontsize=22)
 
