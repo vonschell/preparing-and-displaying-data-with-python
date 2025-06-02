@@ -4,7 +4,7 @@ snack_scores = [80,45,34]
 
 slice_labels = ["Chocolate", "Cheese", "Pickles"]
 
-colors = ["#D2691E", "#ff7f50", "#8A2BE2"]
+colors = ["#7b3f00", "#ffd700", "#6b8e23"]
 
 plt.pie(snack_scores, labels=slice_labels, colors=colors)
 
