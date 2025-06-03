@@ -8,3 +8,6 @@ with open("tips.csv", "r") as file:
   data_numpy = np.array(data_list)
 
 size = data_numpy[:, 6] 
+tips= np.array(data_numpy[:, 1], dtype=float) 
+
+print(size, tips)
