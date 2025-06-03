@@ -10,4 +10,7 @@ with open("tips.csv", "r") as file:
 size = data_numpy[:, 6] 
 tips= np.array(data_numpy[:, 1], dtype=float) 
 
-print(size, tips)
+# print(size, tips)
+
+bills = np.array(data_numpy[:, 0], dtype=float)
+print(bills)
