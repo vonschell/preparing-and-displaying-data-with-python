@@ -11,3 +11,5 @@ size = data_numpy[:,6]
 tips = np.array(data_numpy[:,1], dtype=float)
 bills = np.array(data_numpy[:,0], dtype=float)
 tip_percentages = tips/bills
+
+print(f"The average bill amount is ${bills.mean():.2f}")
