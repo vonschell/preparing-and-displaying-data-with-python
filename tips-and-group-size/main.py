@@ -6,3 +6,5 @@ with open("tips.csv", "r") as file:
   headers = next(data)
   data_list = list(data)
   data_numpy = np.array(data_list)
+
+size = data_numpy[:, 6] 
