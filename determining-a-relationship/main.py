@@ -32,3 +32,9 @@ print(wage_usd)
 wage_and_happiness = wage.merge(happiness)
 print(wage_and_happiness)
 
+wage_and_happiness_by_country = wage_and_happiness.groupby("Country")
+print(wage_and_happiness_by_country)
+
+wage_average_per_country = wage_and_happiness_by_country["Value"].mean()
+
+happiness_average_per_country = wage_and_happiness_by_country["Happiness Score"].mean()
