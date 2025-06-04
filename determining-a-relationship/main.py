@@ -40,12 +40,12 @@ wage_average_per_country = wage_and_happiness_by_country["Value"].mean()
 happiness_average_per_country = wage_and_happiness_by_country["Happiness Score"].mean()
 
 print("Countries with the highest average wages:", wage_average_per_country.nlargest(10))
-print("Countries with the highest average happiness scores:", happiness_average_per_country.nlargest(10))
+print("Countries with the highest average happiness:", happiness_average_per_country.nlargest(10))
 print("Countries with the lowest average wages:", wage_average_per_country.nsmallest(10))
-print("Countries with the lowest average happiness scores:", happiness_average_per_country.nsmallest(10))
+print("Countries with the lowest average happiness:", happiness_average_per_country.nsmallest(10))
 
 #with f-strings
 print(f"Countries with the highest average wages: {wage_average_per_country.nlargest(10)}")
-print(f"Countries with the highest average happiness scores: {happiness_average_per_country.nlargest(10)}")
+print(f"Countries with the highest average happiness: {happiness_average_per_country.nlargest(10)}")
 print(f"Countries with the lowest average wages: {wage_average_per_country.nsmallest(10)}")
-print(f"Countries with the lowest average happiness scores: {happiness_average_per_country.nsmallest(10)}")
+print(f"Countries with the lowest average happiness: {happiness_average_per_country.nsmallest(10)}")
