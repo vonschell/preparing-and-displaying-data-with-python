@@ -57,3 +57,8 @@ print("Countries with the lowest average happiness:",
 fig = sns.scatterplot(x="Value", y="Happiness score", hue="Happiness score", size="Happiness score", sizes=(20, 180), data=wage_and_happiness)
 
 plt.title("Annual Salary and Happiness")
+
+plt.xlabel("Annual Salary of Full-Time Workers(USD)")
+plt.ylabel("Happiness Scores of Citizens")
+
+plt.savefig("salary_and_happiness.png")
