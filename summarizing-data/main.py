@@ -19,5 +19,5 @@ for index in range(0, len(fare)):
   else:
     fare_not_survived.append(fare[index])
 
-print(np.mean(fare_survived))
-print(np.mean(fare_not_survived))
+print(f"The average fare of those who survived was: ${round(np.mean(fare_survived), 2)}")
+print(f"The average fare of those who did not survive was: ${round(np.mean(fare_not_survived), 2)}")
