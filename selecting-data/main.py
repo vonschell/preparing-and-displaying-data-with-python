@@ -8,8 +8,8 @@ with open("titanic.csv", "r") as file:
   data = np.array(data)
   
 
-survived = np.array(data[:,[0]], dtype=int.flatten())
-fare = np.array(data[:,[7]], dtype=float.flatten())
+survived = np.array(data[:,[0]], dtype=int).flatten()
+fare = np.array(data[:,[7]], dtype=float).flatten()
 
 #empty lists to hold data from  the for loop
 fare_survived = []
