@@ -19,5 +19,5 @@ for index in range(0, len(fare)):
   else:
     fare_not_survived.append(fare[index])
 
-print(fare_survived)
-print(fare_not_survived)
+print(np.mean(fare_survived))
+print(np.mean(fare_not_survived))
