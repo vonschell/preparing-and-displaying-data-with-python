@@ -61,4 +61,6 @@ plt.title("Annual Salary and Happiness")
 plt.xlabel("Annual Salary of Full-Time Workers(USD)")
 plt.ylabel("Happiness Scores of Citizens")
 
+fig.set_facecolor("#e5e5e5")
+
 plt.savefig("salary_and_happiness.png")
