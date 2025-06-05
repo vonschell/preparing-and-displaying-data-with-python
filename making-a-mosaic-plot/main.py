@@ -15,3 +15,8 @@ print(data)
 
 classes = ["Mammalia", "Aves", "Reptillia"]
 statuses = ["Endangered", "Critically endangered", "Vulnerable"]
+
+mosaic_data = []
+for item in data:
+  if item["Animal Class"] in classes and item["Category"] in statuses:
+    mosaic_data.append(item)
