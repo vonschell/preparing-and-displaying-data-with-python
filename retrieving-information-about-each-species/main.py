@@ -18,6 +18,10 @@ def get_categories(url):
     data[category_name] = category_animals
   return data
 
+def get_animal(url): 
+  soup = get_soup(url)
+  table = soup.find("table")
+
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
 print(category_data)
