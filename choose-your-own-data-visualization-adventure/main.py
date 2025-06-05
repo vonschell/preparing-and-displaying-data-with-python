@@ -25,8 +25,7 @@ full_labels = [language_names.get(code, code) for code in language_counts.index]
 plt.pie(
     language_counts, 
     labels=full_labels, 
-    autopct='%1.1f%%', # Shows one decimal place for percentages
-    startangle=140, # Start the pie chart at a specific angle
+    autopct=lambda pct: f'{pct:.1f}%', textprops={'fontsize': 8},
     colors=sns.color_palette("pastel")
 )
 
