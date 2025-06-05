@@ -31,8 +31,3 @@ def get_animal(url):
 
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
-
-
-animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
-
-print(animal_class)
