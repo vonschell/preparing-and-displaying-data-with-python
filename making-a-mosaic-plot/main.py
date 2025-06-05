@@ -28,3 +28,6 @@ properties = {
 }
 
 plt.rc("font", size=8)
+
+mosaic_dataframe = pd.DataFrame(mosaic_data)
+
