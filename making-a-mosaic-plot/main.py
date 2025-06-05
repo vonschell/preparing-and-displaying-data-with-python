@@ -10,12 +10,12 @@ with open("data.json", "r") as text:
 
 # Clean and preprocess the "Category" field
 for item in data:
-  item["Category"] = re.compile(r" [\.(]").split(item["Category"])[0]
+  item["Category"] = re.compile(" [\.(]").split(item["Category"])[0]
 
-print(data)
+# print(data)
 
 # Define classes and statuses to filter data
-classes = ["Mammalia", "Aves", "Reptillia"]
+classes = ["Mammalia", "Aves", "Reptilia"]
 statuses = ["Endangered", "Critically endangered", "Vulnerable"]
 
 # Filter data for mosaic plot
