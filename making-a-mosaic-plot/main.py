@@ -20,3 +20,9 @@ mosaic_data = []
 for item in data:
   if item["Animal Class"] in classes and item["Category"] in statuses:
     mosaic_data.append(item)
+    
+properties = {
+  "Endangered": {"color": "#FACDB6"},
+  "Critically endangered": {"color": "#C5CADE"},
+  "Vulnerable": {"color": "#A8DBD2"},
+}
