@@ -29,5 +29,8 @@ def get_animal(url):
       animal_class = row.find("a").contents[0]
   return animal_class
 
-
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
+
+for category in category_data:
+  for animal in category_data[category]:
+    animal_href = animal["href"]
