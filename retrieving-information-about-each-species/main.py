@@ -26,9 +26,12 @@ def get_animal(url):
   rows = table.find_all("tr")
   for row in rows:
     if "Class:" in row.get_text():
-      animal_class = row.find("a"). content[0]
+      animal_class = row.find("a").contents[0]
       return animal_class
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
 print(category_data)
+
+animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
+print(animal_class)
