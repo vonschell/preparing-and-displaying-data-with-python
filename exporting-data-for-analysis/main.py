@@ -1,4 +1,5 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 
 
@@ -38,6 +39,8 @@ category_data = get_categories("https://skillcrush.github.io/web-scraping-endang
 # animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
 
 # print(animal_class)
+
+collected_data = []
 
 for category in category_data:
   for animal in category_data[category]:
