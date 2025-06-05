@@ -12,3 +12,6 @@ for item in data:
   item["Category"] = re.compile(" [\.(]").split(item["Category"])[0]
 
 print(data)
+
+classes = ["Mammalia", "Aves", "Reptillia"]
+statuses = ["Endangered", "Critically endangered", "Vulnerable"]
