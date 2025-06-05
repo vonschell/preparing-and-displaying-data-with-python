@@ -48,5 +48,11 @@ for category in category_data:
     # print(animal_href)
     animal_class = get_animal(animal_href)
     animal_name = animal.contents[0]
-    print(animal_name)
-    print()
+    animal_class = get_animal(animal_href)
+    if len(animal_class) > 3:
+      collected_data.append({
+        "Category": category,
+        "Animal Name": animal_name,
+        "Animal Class": animal_class
+      })
+      
