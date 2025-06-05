@@ -16,7 +16,10 @@ language_names = {
     "en-GB": "English (UK)",
 }
 
-plt.pie(language_counts, labels=language_counts.index)
-plt.title('What Language Does Your Book Speak?')
+# Convert language codes to full names using the dictionary
+full_labels = [language_names.get(code, code) for code in language_counts.index]
+plt.pie(language_counts, labels=full_labels)
+
+plt.title("What Language Does Your Book Speak?")
 plt.axis("equal")
 plt.savefig("book_languages_piechart.png")
