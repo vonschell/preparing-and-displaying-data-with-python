@@ -5,4 +5,9 @@ import matplotlib.pyplot as plt
 with open("books.csv","r") as datafile:
     data = pd.read_csv(datafile,delimiter=",")
 
-print(data["language_code"])
+language_counts = data['language'].value_counts().head(5)
+
+plt.pie(language_counts, labels=language_counts.index)
+plt.title('What Language Does Your Book Speak?')
+plt.axis("equal")
+plt.savefig(book_languages_piechart.png)
