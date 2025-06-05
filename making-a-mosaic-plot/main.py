@@ -26,3 +26,5 @@ properties = {
   "Critically endangered": {"color": "#C5CADE"},
   "Vulnerable": {"color": "#A8DBD2"},
 }
+
+plt.rc("font", size=8)
