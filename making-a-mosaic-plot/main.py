@@ -48,5 +48,5 @@ fig = mosaic(
   properties=lambda x: properties[x[0]],
 )
 
-plt.title("conservation_status_by_animal_class.png")
+plt.savefig("conservation_status_by_animal_class.png")
 
