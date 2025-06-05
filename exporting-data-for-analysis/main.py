@@ -47,5 +47,6 @@ for category in category_data:
     animal_href = animal["href"]
     # print(animal_href)
     animal_class = get_animal(animal_href)
-    print(animal_class)
+    animal_name = animal.contents[0]
+    animal_name()
     print()
