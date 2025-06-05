@@ -12,3 +12,5 @@ fig = sns.heatmap(tips_pivoted, annot=True, cmap="Purples")
 plt.xlabel("Time")
 plt.ylabel("Size")
 plt.title("Heatmap of Tips($) by Party Size and Time")
+
+plt.savefig("heatmap_tips.png")
