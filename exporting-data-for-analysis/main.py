@@ -55,6 +55,7 @@ for category in category_data:
         "Animal Name": animal_name,
         "Animal Class": animal_class
       })
+      print(collected_data)
       
 with open("data.json", "w") as jsonfile:
   json.dump(collected_data, jsonfile)    
