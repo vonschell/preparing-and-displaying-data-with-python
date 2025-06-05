@@ -2,15 +2,17 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-with open("books.csv","r") as datafile:
-    data = pd.read_csv(datafile,delimiter=",")
+# Load the dataset
+with open("books.csv", "r") as datafile:
+    data = pd.read_csv(datafile, delimiter=",")
 
+# Get the top 5 most common language codes
 language_counts = data['language_code'].value_counts().head(5)
 
-#map language codes to full language names in the dataset
+# Map language codes to full language names
 language_names = {
     "eng": "English",
-    "spa": "Spanish",   
+    "spa": "Spanish",
     "ger": "German",
     "en-US": "English (US)",
     "en-GB": "English (UK)",
@@ -18,8 +20,17 @@ language_names = {
 
 # Convert language codes to full names using the dictionary
 full_labels = [language_names.get(code, code) for code in language_counts.index]
-plt.pie(language_counts, labels=full_labels)
 
+# Create a pie chart
+plt.pie(
+    language_counts, 
+    labels=full_labels, 
+    autopct='%1.1f%%', # Shows one decimal place for percentages
+    startangle=140, # Start the pie chart at a specific angle
+    colors=sns.color_palette("pastel")
+)
+
+# Add title and save the chart
 plt.title("What Language Does Your Book Speak?")
 plt.axis("equal")
 plt.savefig("book_languages_piechart.png")
