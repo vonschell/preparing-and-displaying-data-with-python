@@ -8,3 +8,7 @@ with open("tips.csv", "r") as csvfile:
 tips_pivoted = tips.pivot_table(values="tip", index=["size"], columns=["time"])
 
 fig = sns.heatmap(tips_pivoted, annot=True, cmap="Purples")
+
+plt.xlabel("Time")
+plt.ylabel("Size")
+plt.title("Heatmap of Tips($) by Party Size and Time")
